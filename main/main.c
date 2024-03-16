@@ -7,8 +7,18 @@
 
 #define MAX_DISTANCE_CM 500 // 5m max
 
-#define TRIGGER_GPIO 5
-#define ECHO_GPIO 18
+#define TRIGGER_GPIO GPIO_NUM_9
+#define ECHO_GPIO GPIO_NUM_36
+
+// Somehow doesn't work
+// #define HC_SR04_TRIG_GPIO_1 GPIO_NUM_10
+// #define HC_SR04_ECHO_GPIO_1 GPIO_NUM_35
+
+// #define HC_SR04_TRIG_GPIO_2 GPIO_NUM_9
+// #define HC_SR04_ECHO_GPIO_2 GPIO_NUM_36
+
+// #define HC_SR04_TRIG_GPIO_3 GPIO_NUM_6
+// #define HC_SR04_ECHO_GPIO_3 GPIO_NUM_13 
 
 
 void ultrasonic_test(void *pvParameters)
